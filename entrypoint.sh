@@ -30,19 +30,19 @@ cat > config.json << EOF
                         "dest":3001
                     },
                     {
-                        "path":"/${WSPATH}-vless",
+                        "path":"/${UUID}-vless",
                         "dest":3002
                     },
                     {
-                        "path":"/${WSPATH}-vmess",
+                        "path":"/${UUID}-vmess",
                         "dest":3003
                     },
                     {
-                        "path":"/${WSPATH}-trojan",
+                        "path":"/${UUID}-trojan",
                         "dest":3004
                     },
                     {
-                        "path":"/${WSPATH}-shadowsocks",
+                        "path":"/${UUID}-shadowsocks",
                         "dest":3005
                     }
                 ]
@@ -86,7 +86,7 @@ cat > config.json << EOF
                 "network":"ws",
                 "security":"none",
                 "wsSettings":{
-                    "path":"/${WSPATH}-vless"
+                    "path":"/${UUID}-vless"
                 }
             },
             "sniffing":{
@@ -114,7 +114,7 @@ cat > config.json << EOF
             "streamSettings":{
                 "network":"ws",
                 "wsSettings":{
-                    "path":"/${WSPATH}-vmess"
+                    "path":"/${UUID}-vmess"
                 }
             },
             "sniffing":{
@@ -142,7 +142,7 @@ cat > config.json << EOF
                 "network":"ws",
                 "security":"none",
                 "wsSettings":{
-                    "path":"/${WSPATH}-trojan"
+                    "path":"/${UUID}-trojan"
                 }
             },
             "sniffing":{
@@ -171,7 +171,7 @@ cat > config.json << EOF
             "streamSettings":{
                 "network":"ws",
                 "wsSettings":{
-                    "path":"/${WSPATH}-shadowsocks"
+                    "path":"/${UUID}-shadowsocks"
                 }
             },
             "sniffing":{
